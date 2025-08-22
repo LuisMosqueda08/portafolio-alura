@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario:#0F0E0E;
+    --color-secundario: #541212;
+    --color-terciario: #468A9A;
+    --color-cuarto: #EEEEEE;
+
+    --fuente-montserrat: "Montserrat", sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color:var(--color-primario);
+    box-sizing: border-box;
+    color:var(--color-secundario);
+}
+
+header{
+    padding: 2% 0 0 15%;
+}
+
+.menu{
+    display: flex;
+    gap: 80px;
+}
+
+.opcion_menu{
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 15%;
+    gap: 82px;
+}
+
+strong{
+    color: var(--color-terciario);
+}
+
+p{
+    color: var(--color-secundario);
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+}
+
+h1{
+    color: var(--color-secundario);
+    font-size: 36;
+    font-family: var(--fuente-krona);
+}
+.boton{
+    border: 2px solid var(--color-terciario);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--color-secundario);
+    font-family: var(--fuente-montserrat);
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+.boton:hover{
+    background-color: var(--color-cuarto);
+}
+
+.contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.botones{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.accede-a-mis-redes{
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+footer{
+    background-color: var(--color-terciario);
+    padding: 24px;
+    text-align: center;
+}
+
+footer p{
+    color:var(--color-primario);
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+    font-weight: 400;
+}
+
+.imagen{
+    width: 50%;
+}
+
+@media (max-width: 1200px){
+    main{
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .menu{
+        justify-content: center;
+    }
+
+    header{
+        padding: 10%;   
+    }
+
+    .contenido{
+        width: auto;
+    }
+}
